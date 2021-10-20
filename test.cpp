@@ -1,5 +1,6 @@
 #include "cmacro.h"
 
 int main() {
-    std::cout << CMac_compile("HELLO(world-me, premium)")[0][1] << std::endl;
+    // "premium"
+    std::cout << CMac_compile("HELLO(world-me, premium)")["HELLO"][1] << std::endl;
 }
